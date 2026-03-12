@@ -4,10 +4,8 @@ using SecureShopDemo.Data;
 using SecureShopDemo.Services;
 using SecureShopDemo.ViewModels;
 
-namespace SecureShopDemo.Controllers
-{
-    public class AccountController : Controller
-    {
+namespace SecureShopDemo.Controllers {
+    public class AccountController : Controller {
         private readonly AppDbContext _context;
         private readonly LoginLogService _logService;
         private readonly OtpService _otpService;
@@ -17,8 +15,7 @@ namespace SecureShopDemo.Controllers
             AppDbContext context,
             LoginLogService logService,
             OtpService otpService,
-            EmailService emailService)
-        {
+            EmailService emailService) {
             _context = context;
             _logService = logService;
             _otpService = otpService;
@@ -26,29 +23,25 @@ namespace SecureShopDemo.Controllers
         }
 
         [HttpGet]
-        public IActionResult Register()
-        {
+        public IActionResult Register() {
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register(RegisterViewModel model)
-        {
+        public async Task<IActionResult> Register(RegisterViewModel model) {
             if (!ModelState.IsValid)
                 return View(model);
 
             var existedUser = await _context.Users
                 .FirstOrDefaultAsync(x => x.Username == model.Username);
 
-            if (existedUser != null)
-            {
+            if (existedUser != null) {
                 ModelState.AddModelError("Username", "Tên đăng nhập đã tồn tại");
                 return View(model);
             }
 
-            var user = new Models.User
-            {
+            var user = new Models.User {
                 Username = model.Username,
                 FullName = model.FullName,
                 Email = model.Email,
@@ -66,15 +59,13 @@ namespace SecureShopDemo.Controllers
         }
 
         [HttpGet]
-        public IActionResult Login()
-        {
+        public IActionResult Login() {
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(LoginViewModel model)
-        {
+        public async Task<IActionResult> Login(LoginViewModel model) {
             if (!ModelState.IsValid)
                 return View(model);
 
@@ -83,34 +74,28 @@ namespace SecureShopDemo.Controllers
             var user = await _context.Users
                 .FirstOrDefaultAsync(x => x.Username == model.Username);
 
-            if (user == null)
-            {
+            if (user == null) {
                 await _logService.LogAsync(model.Username, ip, false, "User không tồn tại");
                 ModelState.AddModelError("", "Sai tên đăng nhập hoặc mật khẩu");
                 return View(model);
             }
 
-            if (user.IsLocked && user.LockedUntil.HasValue && user.LockedUntil > DateTime.Now)
-            {
+            if (user.IsLocked && user.LockedUntil.HasValue && user.LockedUntil > DateTime.Now) {
                 await _logService.LogAsync(user.Username, ip, false, "Tài khoản đang bị khóa");
                 ModelState.AddModelError("", $"Tài khoản đang bị khóa đến {user.LockedUntil:dd/MM/yyyy HH:mm:ss}");
                 return View(model);
             }
 
             bool isPasswordValid;
-            try
-            {
+            try {
                 isPasswordValid = BCrypt.Net.BCrypt.Verify(model.Password, user.PasswordHash);
-            }
-            catch
-            {
+            } catch {
                 await _logService.LogAsync(user.Username, ip, false, "PasswordHash không hợp lệ trong DB");
-                ModelState.AddModelError("", "Dữ liệu mật khẩu của tài khoản không hợp lệ. Hãy kiểm tra lại dữ liệu hệ thống.");
+                ModelState.AddModelError("", "Dữ liệu mật khẩu không hợp lệ. Hãy kiểm tra lại dữ liệu hệ thống.");
                 return View(model);
             }
 
-            if (!isPasswordValid)
-            {
+            if (!isPasswordValid) {
                 await _logService.LogAsync(user.Username, ip, false, "Sai mật khẩu");
 
                 var failCount = await _context.LoginAttemptLogs
@@ -118,8 +103,7 @@ namespace SecureShopDemo.Controllers
                                   && x.IsSuccess == false
                                   && x.AttemptTime > DateTime.Now.AddMinutes(-5));
 
-                if (failCount >= 5)
-                {
+                if (failCount >= 5) {
                     user.IsLocked = true;
                     user.LockedUntil = DateTime.Now.AddMinutes(5);
                     await _context.SaveChangesAsync();
@@ -138,20 +122,16 @@ namespace SecureShopDemo.Controllers
 
             await _logService.LogAsync(user.Username, ip, true, "Đúng mật khẩu - chờ xác thực OTP");
 
-            if (string.IsNullOrWhiteSpace(user.Email))
-            {
-                ModelState.AddModelError("", "Tài khoản chưa có email để nhận OTP.");
+            if (string.IsNullOrWhiteSpace(user.Email)) {
+                ModelState.AddModelError("", "Tài khoản chưa có email đ�� nhận OTP.");
                 return View(model);
             }
 
             var otp = await _otpService.CreateOtpAsync(user.Username);
 
-            try
-            {
+            try {
                 await _emailService.SendOtpEmailAsync(user.Email, user.FullName, otp);
-            }
-            catch (Exception ex)
-            {
+            } catch (Exception ex) {
                 await _logService.LogAsync(user.Username, ip, false, "Không gửi được email OTP");
                 ModelState.AddModelError("", $"Không gửi được email OTP: {ex.Message}");
                 return View(model);
@@ -169,15 +149,13 @@ namespace SecureShopDemo.Controllers
         }
 
         [HttpGet]
-        public IActionResult VerifyOtp()
-        {
+        public IActionResult VerifyOtp() {
             var pendingUsername = HttpContext.Session.GetString("PendingUsername");
 
             if (string.IsNullOrEmpty(pendingUsername))
                 return RedirectToAction("Login");
 
-            var model = new VerifyOtpViewModel
-            {
+            var model = new VerifyOtpViewModel {
                 Username = pendingUsername
             };
 
@@ -186,8 +164,7 @@ namespace SecureShopDemo.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> VerifyOtp(VerifyOtpViewModel model)
-        {
+        public async Task<IActionResult> VerifyOtp(VerifyOtpViewModel model) {
             var pendingUsername = HttpContext.Session.GetString("PendingUsername");
             var ip = HttpContext.Connection.RemoteIpAddress?.ToString() ?? "Unknown";
 
@@ -199,19 +176,26 @@ namespace SecureShopDemo.Controllers
             if (!ModelState.IsValid)
                 return View(model);
 
-            var isOtpValid = await _otpService.VerifyOtpAsync(pendingUsername, model.OtpCode);
+            // ✅ Xử lý kết quả từ OtpService với brute force protection
+            var result = await _otpService.VerifyOtpAsync(pendingUsername, model.OtpCode);
 
-            if (!isOtpValid)
-            {
-                await _logService.LogAsync(pendingUsername, ip, false, "Sai OTP hoặc OTP hết hạn");
-                ModelState.AddModelError("", "Mã OTP không đúng hoặc đã hết hạn");
+            if (!result.IsValid) {
+                await _logService.LogAsync(pendingUsername, ip, false, result.Message);
+
+                // Nếu OTP bị vô hiệu hóa → bắt đăng nhập lại
+                if (result.Message.Contains("vô hiệu hóa")) {
+                    HttpContext.Session.Remove("PendingUsername");
+                    TempData["ErrorMessage"] = result.Message;
+                    return RedirectToAction("Login");
+                }
+
+                ModelState.AddModelError("", result.Message);
                 return View(model);
             }
 
             var user = await _context.Users.FirstOrDefaultAsync(x => x.Username == pendingUsername);
 
-            if (user == null)
-            {
+            if (user == null) {
                 ModelState.AddModelError("", "Không tìm thấy người dùng");
                 return View(model);
             }
@@ -233,8 +217,7 @@ namespace SecureShopDemo.Controllers
             return RedirectToAction("Index", "Product");
         }
 
-        public IActionResult Logout()
-        {
+        public IActionResult Logout() {
             HttpContext.Session.Clear();
             TempData["SuccessMessage"] = "Đã đăng xuất";
             return RedirectToAction("Login");

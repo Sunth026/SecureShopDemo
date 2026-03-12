@@ -41,23 +41,57 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-controller="Cart" asp-action="Index">Giỏ hàng</a>
                             </li>
-                            @* <li class="nav-item">
-                                <a class="nav-link text-dark" asp-controller="Order" asp-action="CsrfDemo">Đặt hàng</a>
-                            </li> *@
-
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-controller="FileSecurity" asp-action="UploadDemo">Upload file</a>
                             </li>
-
                         }
 
                         @if (isAdmin)
                         {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-controller="Security" asp-action="Dashboard">Quản trị bảo mật</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-controller="Security" asp-action="Lab">Security Lab</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-dark dropdown-toggle" href="#"
+                                   id="adminMenu" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    🔐 Quản trị
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="adminMenu">
+                                    <li>
+                                        <a class="dropdown-item" asp-controller="Security" asp-action="Dashboard">
+                                            📊 Dashboard
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" asp-controller="Security" asp-action="Lab">
+                                            🧪 Security Lab
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" asp-controller="Security" asp-action="LoginLogs">
+                                            🔑 Login Logs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" asp-controller="Security" asp-action="AttackLogs">
+                                            ⚔️ Attack Logs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" asp-controller="Security" asp-action="BlockedIps">
+                                            🚫 Blocked IPs
+                                        </a>
+                                    </li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <a class="dropdown-item" asp-controller="Security" asp-action="AuditLogs">
+                                            📋 Audit Logs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" asp-controller="Security" asp-action="ClickjackingDemo">
+                                            🖱️ Clickjacking Demo
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                         }
                     </ul>

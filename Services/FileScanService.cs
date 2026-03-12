@@ -20,6 +20,15 @@
             { "ELF",     new byte[] { 0x7F, 0x45, 0x4C, 0x46 } },
         };
 
+        // ✅ MIME type whitelist tương ứng với từng extension
+        private static readonly Dictionary<string, string[]> _allowedMimeTypes = new()
+        {
+            { ".jpg",  new[] { "image/jpeg" } },
+            { ".jpeg", new[] { "image/jpeg" } },
+            { ".png",  new[] { "image/png" } },
+            { ".gif",  new[] { "image/gif" } },
+        };
+
         public (bool IsSafe, string Message, string Extension) Validate(IFormFile file) {
             if (file == null || file.Length == 0)
                 return (false, "File rỗng hoặc không hợp lệ.", "");
@@ -54,18 +63,24 @@
                         extension);
             }
 
+            // Kiểm tra magic bytes hợp lệ theo extension
             if (_magicBytes.TryGetValue(extension, out var expectedMagic)) {
-                bool magicMatches = bytesRead >= expectedMagic.Length &&
-                                    headerBytes.Take(expectedMagic.Length).SequenceEqual(expectedMagic);
-                if (!magicMatches) {
-                    var actualHex = BitConverter.ToString(headerBytes.Take(4).ToArray());
+                if (bytesRead < expectedMagic.Length || !headerBytes.Take(expectedMagic.Length).SequenceEqual(expectedMagic))
                     return (false,
-                        $"⚠️ Nội dung file không khớp định dạng {extension}. Magic bytes thực tế: {actualHex}",
+                        $"❌ Nội dung file không khớp với định dạng {extension} (magic bytes không hợp lệ).",
                         extension);
-                }
             }
 
-            return (true, "✅ File an toàn.", extension);
+            // Bước 4: ✅ Kiểm tra MIME type từ Content-Type header
+            if (_allowedMimeTypes.TryGetValue(extension, out var allowedMimes)) {
+                var contentType = file.ContentType?.ToLowerInvariant() ?? "";
+                if (!allowedMimes.Contains(contentType))
+                    return (false,
+                        $"❌ MIME type '{file.ContentType}' không hợp lệ cho file {extension}. Cho phép: {string.Join(", ", allowedMimes)}",
+                        extension);
+            }
+
+            return (true, $"✅ File hợp lệ: {file.FileName} ({extension}, {file.Length / 1024.0:F1} KB)", extension);
         }
     }
 }

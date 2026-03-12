@@ -45,6 +45,7 @@ namespace SecureShopDemo.Controllers {
             ViewBag.UnsafeUploads = await _context.UploadedFileLogs.CountAsync(x => !x.IsSafe);
             ViewBag.SqlInjectionCount = await _context.AttackLogs.CountAsync(x => x.AttackType == "SQLInjection");
             ViewBag.DdosCount = await _context.AttackLogs.CountAsync(x => x.AttackType == "DDoS Suspected");
+            ViewBag.TotalAuditLogs = await _context.AuditLogs.CountAsync(); // ✅ Thêm mới
 
             var recentLoginLogs = await _context.LoginAttemptLogs
                 .OrderByDescending(x => x.AttemptTime).Take(10).ToListAsync();
@@ -81,7 +82,6 @@ namespace SecureShopDemo.Controllers {
             return View(blockedIps);
         }
 
-        // ✅ MỚI: Admin bỏ chặn IP thủ công
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult UnblockIp(string ip) {
@@ -149,6 +149,24 @@ namespace SecureShopDemo.Controllers {
             }
 
             return View(result);
+        }
+
+        // ✅ Thêm mới: Demo Clickjacking
+        public IActionResult ClickjackingDemo() {
+            var redirect = CheckAdmin();
+            if (redirect != null) return redirect;
+            return View();
+        }
+
+        // ✅ Thêm mới: Xem Audit Logs
+        public async Task<IActionResult> AuditLogs() {
+            var redirect = CheckAdmin();
+            if (redirect != null) return redirect;
+            var logs = await _context.AuditLogs
+                .OrderByDescending(x => x.CreatedAt)
+                .Take(100)
+                .ToListAsync();
+            return View(logs);
         }
 
         private static bool IsSqlInjectionAttempt(string input) {

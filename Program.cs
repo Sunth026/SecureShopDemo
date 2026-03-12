@@ -17,13 +17,14 @@ builder.Services.AddScoped<FileScanService>();
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
 builder.Services.AddScoped<EmailService>();
 builder.Services.AddScoped<OtpService>();
+builder.Services.AddScoped<AuditLogService>(); // ✅ Thêm mới
 
 // ✅ Session Security đầy đủ
 builder.Services.AddSession(options => {
     options.IdleTimeout = TimeSpan.FromMinutes(30);
-    options.Cookie.HttpOnly = true;                          // JS không đọc được -> chống XSS
+    options.Cookie.HttpOnly = true;                          // JS không đọc được → chống XSS
     options.Cookie.IsEssential = true;
-    options.Cookie.SameSite = SameSiteMode.Strict;           // Chỉ gửi cùng domain -> chống CSRF
+    options.Cookie.SameSite = SameSiteMode.Strict;           // Chỉ gửi cùng domain → chống CSRF
     options.Cookie.SecurePolicy = CookieSecurePolicy.Always; // Chỉ qua HTTPS
 });
 
@@ -44,14 +45,19 @@ app.Use(async (context, next) => {
     context.Response.Headers["X-Frame-Options"] = "DENY";
     context.Response.Headers["X-Content-Type-Options"] = "nosniff";
     context.Response.Headers["Content-Security-Policy"] =
-        "default-src 'self'; script-src 'self' 'unsafe-inline'; " +
-        "style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self';";
+        "default-src 'self'; " +
+        "script-src 'self' 'unsafe-inline'; " +   // unsafe-inline: trade-off cho Razor inline scripts
+        "style-src 'self' 'unsafe-inline'; " +
+        "img-src 'self' data:; " +
+        "font-src 'self'; " +
+        "frame-ancestors 'none';";                // ✅ Chặn Clickjacking (CSP thế hệ mới)
     context.Response.Headers["Referrer-Policy"] = "strict-origin-when-cross-origin";
     context.Response.Headers["Permissions-Policy"] = "camera=(), microphone=(), geolocation=()";
     await next();
 });
 
 app.UseRouting();
+app.UseMiddleware<LoginRateLimitMiddleware>(); // ✅ Thêm mới - rate limit login
 app.UseMiddleware<DdosProtectionMiddleware>();
 app.UseSession();
 app.UseAuthorization();

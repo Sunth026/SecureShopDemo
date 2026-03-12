@@ -1,9 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace SecureShopDemo.ViewModels
-{
-    public class RegisterViewModel
-    {
+namespace SecureShopDemo.ViewModels {
+    public class RegisterViewModel {
         [Required(ErrorMessage = "Vui lòng nhập tên đăng nhập")]
         [StringLength(50)]
         public string Username { get; set; } = string.Empty;
@@ -19,7 +17,9 @@ namespace SecureShopDemo.ViewModels
 
         [Required(ErrorMessage = "Vui lòng nhập mật khẩu")]
         [DataType(DataType.Password)]
-        [MinLength(6, ErrorMessage = "Mật khẩu phải từ 6 ký tự trở lên")]
+        [RegularExpression(
+            @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#^()_\-+=]).{8,}$",
+            ErrorMessage = "Mật khẩu phải có ít nhất 8 ký tự, gồm chữ hoa, chữ thường, số và ký tự đặc biệt (@$!%*?&#...)")]
         public string Password { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "Vui lòng xác nhận mật khẩu")]

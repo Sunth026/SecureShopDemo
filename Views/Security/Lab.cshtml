@@ -8,45 +8,71 @@
     Khu vực này dành cho quản trị viên để mô phỏng và kiểm thử các lỗ hổng bảo mật phổ biến.
 </div>
 
-<div class="row g-3">
-    <div class="col-md-6">
-        <div class="card h-100 border-danger">
-            <div class="card-body">
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="card h-100 border-danger">
+                <div class="card-body">
                 <h5 class="card-title">XSS Simulation</h5>
                 <p class="card-text">Mô phỏng XSS trên bình luận sản phẩm.</p>
-                <a class="btn btn-danger" href="/Product/Details/1?unsafeMode=true">UNSAFE</a>
-                <a class="btn btn-success" href="/Product/Details/1?unsafeMode=false">SAFE</a>
-            </div>
+            <a class="btn btn-danger" href="/Product/Details/1?unsafeMode=true">UNSAFE</a>
+        <a class="btn btn-success" href="/Product/Details/1?unsafeMode=false">SAFE</a>
+    </div>
         </div>
     </div>
 
-    <div class="col-md-6">
-        <div class="card h-100 border-secondary">
-            <div class="card-body">
+            <div class="col-md-6">
+                <div class="card h-100 border-secondary">
+                <div class="card-body">
                 <h5 class="card-title">SQL Injection Simulation</h5>
-                <p class="card-text">So sánh truy vấn nối chuỗi và truy vấn tham số hóa.</p>
-                <a class="btn btn-secondary" href="/Security/SqlInjectionDemo">Mở SQL Injection Lab</a>
-            </div>
+            <p class="card-text">So sánh truy vấn nối chuỗi và truy vấn tham số hóa.</p>
+        <a class="btn btn-secondary" href="/Security/SqlInjectionDemo">Mở SQL Injection Lab</a>
+    </div>
         </div>
     </div>
 
-    <div class="col-md-6">
-        <div class="card h-100 border-warning">
-            <div class="card-body">
+            <div class="col-md-6">
+                <div class="card h-100 border-warning">
+                <div class="card-body">
                 <h5 class="card-title">CSRF Simulation</h5>
-                <p class="card-text">Mô phỏng request giả mạo và chống CSRF bằng Anti-Forgery Token.</p>
-                <a class="btn btn-warning" href="/Order/CsrfDemo">Mở CSRF Lab</a>
-            </div>
+            <p class="card-text">Mô phỏng request giả mạo và chống CSRF bằng Anti-Forgery Token.</p>
+        <a class="btn btn-warning" href="/Order/CsrfDemo">Mở CSRF Lab</a>
+    </div>
         </div>
     </div>
 
-    <div class="col-md-6">
-        <div class="card h-100 border-info">
-            <div class="card-body">
+            <div class="col-md-6">
+                <div class="card h-100 border-info">
+                <div class="card-body">
                 <h5 class="card-title">File Upload Validation</h5>
-                <p class="card-text">Kiểm thử upload file an toàn và chặn file nguy hiểm.</p>
-                <a class="btn btn-info" href="/FileSecurity/UploadDemo">Mở Upload Lab</a>
-            </div>
+            <p class="card-text">Kiểm thử upload file an toàn và chặn file nguy hiểm.</p>
+        <a class="btn btn-info" href="/FileSecurity/UploadDemo">Mở Upload Lab</a>
+    </div>
         </div>
+    </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 border-dark">
+                <div class="card-body">
+                    <h5 class="card-title">🖱️ Clickjacking Demo</h5>
+                    <p class="card-text">
+                Minh họa tấn công Clickjacking bằng iframe ẩn và cơ chế bảo vệ
+                <code>X-Frame-Options: DENY</code> + <code>frame-ancestors 'none'</code>.
+            </p>
+        <a class="btn btn-dark" href="/Security/ClickjackingDemo">Mở Clickjacking Lab</a>
+    </div>
+        </div>
+    </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 border-primary">
+                <div class="card-body">
+                    <h5 class="card-title">📋 Audit Logs</h5>
+                    <p class="card-text">
+                Xem nhật ký các hành động quan trọng trong hệ thống:
+                đặt hàng, thêm sản phẩm, v.v.
+            </p>
+        <a class="btn btn-primary" href="/Security/AuditLogs">Xem Audit Logs</a>
+    </div>
+</div>
     </div>
 </div>

@@ -1,0 +1,61 @@
+﻿@model IEnumerable<SecureShopDemo.Models.AuditLog>
+@{
+    ViewData["Title"] = "Audit Logs";
+}
+
+<div class="container mt-4">
+    <h2 class="text-primary">📋 Audit Logs — Nhật ký hành động hệ thống</h2>
+    <p class="text-muted">Ghi lại các hành động quan trọng: đặt hàng, thêm/sửa/xóa sản phẩm, v.v.</p>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">Chưa có audit log nào.</div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-hover table-bordered table-sm">
+                <thead class="table-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Thời gian</th>
+                        <th>Người dùng</th>
+                        <th>Hành động</th>
+                        <th>Đối tượng</th>
+                        <th>Mô tả</th>
+                        <th>IP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var log in Model)
+                    {
+                        <tr>
+                            <td>@log.Id</td>
+                            <td>@log.CreatedAt.ToString("dd/MM/yyyy HH:mm:ss")</td>
+                            <td><span class="badge bg-secondary">@log.Username</span></td>
+                            <td>
+                                @if (log.Action.Contains("Delete") || log.Action.Contains("Remove"))
+                                {
+                                    <span class="badge bg-danger">@log.Action</span>
+                                }
+                                else if (log.Action.Contains("Create") || log.Action.Contains("Place") || log.Action.Contains("Add"))
+                                {
+                                    <span class="badge bg-success">@log.Action</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-primary">@log.Action</span>
+                                }
+                            </td>
+                            <td>@log.EntityType</td>
+                            <td>@log.Description</td>
+                            <td><code>@log.IpAddress</code></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+
+    <a href="@Url.Action("Dashboard", "Security")" class="btn btn-secondary mt-2">← Quay lại Dashboard</a>
+</div>

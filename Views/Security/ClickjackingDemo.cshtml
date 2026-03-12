@@ -1,0 +1,97 @@
+﻿@{
+    ViewData["Title"] = "Demo Clickjacking";
+}
+
+<div class="container mt-4">
+    <h2 class="text-danger">🖱️ Demo Clickjacking Attack</h2>
+    <p class="text-muted">
+        Clickjacking là kỹ thuật nhúng trang web vào trong <code>&lt;iframe&gt;</code> ẩn để đánh lừa
+        người dùng click vào các nút bấm mà họ không nhìn thấy, dẫn đến thực hiện hành động ngoài ý muốn.
+    </p>
+
+    <div class="row mt-4">
+        <!-- UNSAFE Panel -->
+        <div class="col-md-6 mb-4">
+            <div class="card border-danger h-100">
+                <div class="card-header bg-danger text-white">
+                    <strong>❌ UNSAFE — Không có bảo vệ Clickjacking</strong>
+                </div>
+                <div class="card-body">
+                    <p>Nếu trang web <strong>không có</strong> header <code>X-Frame-Options</code> hoặc CSP <code>frame-ancestors</code>, kẻ tấn công có thể làm như sau:</p>
+                    <pre class="bg-dark text-white p-3 rounded small"><code>&lt;!-- Trang của kẻ tấn công --&gt;
+&lt;style&gt;
+  iframe {
+    opacity: 0.01;       /* Ẩn hoàn toàn */
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 999;
+  }
+  .fake-btn {
+    position: absolute;
+    top: 200px; left: 100px;
+  }
+&lt;/style&gt;
+
+&lt;!-- Iframe ẩn chứa trang thật --&gt;
+&lt;iframe src="https://victim-shop.com/Order/Checkout"&gt;&lt;/iframe&gt;
+
+&lt;!-- Nút giả mà nạn nhân nhìn thấy --&gt;
+&lt;button class="fake-btn"&gt;🎁 Nhận quà miễn phí!&lt;/button&gt;</code></pre>
+                    <div class="alert alert-danger mt-2">
+                        <strong>Hậu quả:</strong> Nạn nhân tưởng click "Nhận quà" nhưng thực ra đang click nút
+                        <strong>"Đặt hàng"</strong> trên trang thật bên dưới.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SAFE Panel -->
+        <div class="col-md-6 mb-4">
+            <div class="card border-success h-100">
+                <div class="card-header bg-success text-white">
+                    <strong>✅ SAFE — Được bảo vệ bởi X-Frame-Options + CSP</strong>
+                </div>
+                <div class="card-body">
+                    <p>Thử nhúng trang này vào <code>&lt;iframe&gt;</code>:</p>
+                    <iframe src="/Product/Index"
+                            width="100%" height="150"
+                            style="border:2px dashed #dc3545;"
+                            title="Iframe bị chặn">
+                    </iframe>
+                    <p class="text-success mt-2">
+                        ✅ Trình duyệt <strong>từ chối hiển thị</strong> nội dung vì các header sau đã được thiết lập:
+                    </p>
+                    <table class="table table-sm table-bordered mt-2">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Header</th>
+                                <th>Giá trị</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>X-Frame-Options</code></td>
+                                <td><code class="text-success">DENY</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>Content-Security-Policy</code></td>
+                                <td><code class="text-success">frame-ancestors 'none'</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert alert-info">
+        <strong>💡 Cơ chế bảo vệ trong SecureShopDemo (<code>Program.cs</code>):</strong>
+        <ul class="mb-0 mt-2">
+            <li><code>X-Frame-Options: DENY</code> — Ngăn mọi iframe, kể cả cùng domain (hỗ trợ trình duyệt cũ)</li>
+            <li><code>Content-Security-Policy: frame-ancestors 'none'</code> — Phiên bản CSP hiện đại, ưu tiên hơn X-Frame-Options</li>
+        </ul>
+    </div>
+
+    <a href="@Url.Action("Lab", "Security")" class="btn btn-secondary mt-2">← Quay lại Lab</a>
+</div>
