@@ -2,39 +2,40 @@
 
 <h2 class="mb-4">🚫 IP đang bị chặn</h2>
 
-@if (TempData["SuccessMessage"] != null) {
+@if (TempData["SuccessMessage"] != null)
+{
     <div class="alert alert-success">@TempData["SuccessMessage"]</div>
 }
 
-@if (!Model.Any()) {
+@if (!Model.Any())
+{
     <div class="alert alert-success">✅ Hiện tại không có IP nào đang bị chặn.</div>
-} else {
+}
+else
+{
     <table class="table table-bordered table-striped">
         <thead class="table-dark">
             <tr><th>IP Address</th><th>Bị chặn đến</th><th>Còn lại</th><th>Thao tác</th></tr>
         </thead>
         <tbody>
-            @foreach (var item in Model) {
+            @foreach (var item in Model)
+            {
                 var remaining = (item.BlockedUntil - DateTime.Now).TotalSeconds;
                 <tr>
                     <td><strong>@item.IpAddress</strong></td>
                     <td class="text-danger fw-bold">@item.BlockedUntil.ToString("HH:mm:ss dd/MM/yyyy")</td>
                     <td>
-                        @if (remaining > 0) {
-                            <span class="badge bg-warning text-dark">~@((int)remaining)s</span>
-                        } else {
-
-                            <span class="badge bg-secondary">Hết hạn</span>
-                        }
+                        @if (remaining > 0)
+                        { <span class="badge bg-warning text-dark">~@((int)remaining)s</span> }
+                        else
+                        { <span class="badge bg-secondary">Hết hạn</span> }
                     </td>
                     <td>
                         <form method="post" asp-action="UnblockIp" asp-controller="Security" style="display:inline">
                             @Html.AntiForgeryToken()
                             <input type="hidden" name="ip" value="@item.IpAddress" />
                             <button type="submit" class="btn btn-sm btn-outline-success"
-                                    onclick="return confirm('Bỏ chặn IP @item.IpAddress?')">
-                                ✅ Bỏ chặn
-                            </button>
+                                    onclick="return confirm('Bỏ chặn IP @item.IpAddress?')">✅ Bỏ chặn</button>
                         </form>
                     </td>
                 </tr>
