@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\hk2\\nhom1_at_bmtt\\nhom1\\secureshopdemo\\secureshopdemo\\views\\security\\clickjackingdemo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\security\\clickjackingdemo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\hk2\\nhom1_at_bmtt\\nhom1\\secureshopdemo\\secureshopdemo\\services\\otpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:services\\otpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\hk2\\nhom1_at_bmtt\\nhom1\\secureshopdemo\\secureshopdemo\\views\\security\\blockedips.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\security\\blockedips.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\hk2\\nhom1_at_bmtt\\nhom1\\secureshopdemo\\secureshopdemo\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\hk2\\nhom1_at_bmtt\\nhom1\\secureshopdemo\\secureshopdemo\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\hk2\\nhom1_at_bmtt\\nhom1\\secureshopdemo\\secureshopdemo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -23,14 +43,6 @@
       "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\security\\lab.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\hk2\\nhom1_at_bmtt\\nhom1\\secureshopdemo\\secureshopdemo\\views\\security\\auditlogs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\security\\auditlogs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\hk2\\nhom1_at_bmtt\\nhom1\\secureshopdemo\\secureshopdemo\\views\\security\\clickjackingdemo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\security\\clickjackingdemo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\hk2\\nhom1_at_bmtt\\nhom1\\secureshopdemo\\secureshopdemo\\controllers\\securitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:controllers\\securitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,24 +51,12 @@
       "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\hk2\\nhom1_at_bmtt\\nhom1\\secureshopdemo\\secureshopdemo\\middleware\\loginratelimitmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:middleware\\loginratelimitmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\hk2\\nhom1_at_bmtt\\nhom1\\secureshopdemo\\secureshopdemo\\middleware\\ddosprotectionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:middleware\\ddosprotectionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\hk2\\nhom1_at_bmtt\\nhom1\\secureshopdemo\\secureshopdemo\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\hk2\\nhom1_at_bmtt\\nhom1\\secureshopdemo\\secureshopdemo\\services\\auditlogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:services\\auditlogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\hk2\\nhom1_at_bmtt\\nhom1\\secureshopdemo\\secureshopdemo\\models\\auditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:models\\auditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\hk2\\nhom1_at_bmtt\\nhom1\\secureshopdemo\\secureshopdemo\\services\\filescanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,16 +75,8 @@
       "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:models\\otpentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\hk2\\nhom1_at_bmtt\\nhom1\\secureshopdemo\\secureshopdemo\\services\\otpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:services\\otpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\hk2\\nhom1_at_bmtt\\nhom1\\secureshopdemo\\secureshopdemo\\views\\security\\sqlinjectiondemo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\security\\sqlinjectiondemo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\hk2\\nhom1_at_bmtt\\nhom1\\secureshopdemo\\secureshopdemo\\views\\security\\blockedips.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\security\\blockedips.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\hk2\\nhom1_at_bmtt\\nhom1\\secureshopdemo\\secureshopdemo\\services\\ddosprotectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -110,11 +102,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -123,7 +115,19 @@
               "ViewState": "AgIAABkAAAAAAAAAAAAAAEIAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-12T02:29:46.285Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClickjackingDemo.cshtml",
+              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\Security\\ClickjackingDemo.cshtml",
+              "RelativeDocumentMoniker": "Views\\Security\\ClickjackingDemo.cshtml",
+              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\Security\\ClickjackingDemo.cshtml",
+              "RelativeToolTip": "Views\\Security\\ClickjackingDemo.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-12T07:56:41.37Z",
               "EditorCaption": ""
             },
             {
@@ -133,10 +137,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
@@ -160,241 +160,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAKAAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-12T07:42:29.479Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
-              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "DocumentIndex": 3,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-12T07:42:02.637Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
-              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-12T07:42:00.83Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-12T07:49:01.569Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Lab.cshtml",
-              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\Security\\Lab.cshtml",
-              "RelativeDocumentMoniker": "Views\\Security\\Lab.cshtml",
-              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\Security\\Lab.cshtml",
-              "RelativeToolTip": "Views\\Security\\Lab.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAYwE0AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-12T07:41:26.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuditLogs.cshtml",
-              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\Security\\AuditLogs.cshtml",
-              "RelativeDocumentMoniker": "Views\\Security\\AuditLogs.cshtml",
-              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\Security\\AuditLogs.cshtml",
-              "RelativeToolTip": "Views\\Security\\AuditLogs.cshtml",
-              "ViewState": "AgIAACgAAAAAAAAAAAAUwDwAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-12T07:37:54.228Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\Security\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "Views\\Security\\Dashboard.cshtml",
-              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\Security\\Dashboard.cshtml",
-              "RelativeToolTip": "Views\\Security\\Dashboard.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAEAAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-12T06:49:05.077Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ClickjackingDemo.cshtml",
-              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\Security\\ClickjackingDemo.cshtml",
-              "RelativeDocumentMoniker": "Views\\Security\\ClickjackingDemo.cshtml",
-              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\Security\\ClickjackingDemo.cshtml",
-              "RelativeToolTip": "Views\\Security\\ClickjackingDemo.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAYwGAAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-12T07:37:26.21Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LoginRateLimitMiddleware.cs",
-              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Middleware\\LoginRateLimitMiddleware.cs",
-              "RelativeDocumentMoniker": "Middleware\\LoginRateLimitMiddleware.cs",
-              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Middleware\\LoginRateLimitMiddleware.cs",
-              "RelativeToolTip": "Middleware\\LoginRateLimitMiddleware.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC4AAAABAAAAAAAAAA==",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T07:36:22.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-12T07:48:57.097Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AuditLogService.cs",
-              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Services\\AuditLogService.cs",
-              "RelativeDocumentMoniker": "Services\\AuditLogService.cs",
-              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Services\\AuditLogService.cs",
-              "RelativeToolTip": "Services\\AuditLogService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T07:35:47.09Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AuditLog.cs",
-              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Models\\AuditLog.cs",
-              "RelativeDocumentMoniker": "Models\\AuditLog.cs",
-              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Models\\AuditLog.cs",
-              "RelativeToolTip": "Models\\AuditLog.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T07:35:22.843Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "RegisterViewModel.cs",
-              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\ViewModels\\RegisterViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\RegisterViewModel.cs",
-              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\ViewModels\\RegisterViewModel.cs",
-              "RelativeToolTip": "ViewModels\\RegisterViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T07:33:59.975Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T03:30:44.442Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SecurityController.cs",
-              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Controllers\\SecurityController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SecurityController.cs",
-              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Controllers\\SecurityController.cs",
-              "RelativeToolTip": "Controllers\\SecurityController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAYwLQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T06:00:51.082Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAswOEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T07:33:35.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DdosProtectionMiddleware.cs",
-              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Middleware\\DdosProtectionMiddleware.cs",
-              "RelativeDocumentMoniker": "Middleware\\DdosProtectionMiddleware.cs",
-              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Middleware\\DdosProtectionMiddleware.cs",
-              "RelativeToolTip": "Middleware\\DdosProtectionMiddleware.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T06:48:03.93Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "OtpEntry.cs",
-              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Models\\OtpEntry.cs",
-              "RelativeDocumentMoniker": "Models\\OtpEntry.cs",
-              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Models\\OtpEntry.cs",
-              "RelativeToolTip": "Models\\OtpEntry.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T07:33:15.485Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "OtpService.cs",
-              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Services\\OtpService.cs",
-              "RelativeDocumentMoniker": "Services\\OtpService.cs",
-              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Services\\OtpService.cs",
-              "RelativeToolTip": "Services\\OtpService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T07:32:22.876Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "FileScanService.cs",
-              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Services\\FileScanService.cs",
-              "RelativeDocumentMoniker": "Services\\FileScanService.cs",
-              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Services\\FileScanService.cs",
-              "RelativeToolTip": "Services\\FileScanService.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwFUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T06:47:12.262Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 2,
               "Title": "BlockedIps.cshtml",
               "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\Security\\BlockedIps.cshtml",
               "RelativeDocumentMoniker": "Views\\Security\\BlockedIps.cshtml",
@@ -406,7 +196,164 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 1,
+              "Title": "OtpService.cs",
+              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Services\\OtpService.cs",
+              "RelativeDocumentMoniker": "Services\\OtpService.cs",
+              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Services\\OtpService.cs",
+              "RelativeToolTip": "Services\\OtpService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T07:32:22.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAH4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-12T07:42:29.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-12T07:42:00.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-12T07:42:02.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Lab.cshtml",
+              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\Security\\Lab.cshtml",
+              "RelativeDocumentMoniker": "Views\\Security\\Lab.cshtml",
+              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\Security\\Lab.cshtml",
+              "RelativeToolTip": "Views\\Security\\Lab.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwE0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-12T07:41:26.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\Security\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Security\\Dashboard.cshtml",
+              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\Security\\Dashboard.cshtml",
+              "RelativeToolTip": "Views\\Security\\Dashboard.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-12T06:49:05.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\ViewModels\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\RegisterViewModel.cs",
+              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\ViewModels\\RegisterViewModel.cs",
+              "RelativeToolTip": "ViewModels\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T07:33:59.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T03:30:44.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SecurityController.cs",
+              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Controllers\\SecurityController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SecurityController.cs",
+              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Controllers\\SecurityController.cs",
+              "RelativeToolTip": "Controllers\\SecurityController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwLQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T06:00:51.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAswOEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T07:33:35.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DdosProtectionMiddleware.cs",
+              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Middleware\\DdosProtectionMiddleware.cs",
+              "RelativeDocumentMoniker": "Middleware\\DdosProtectionMiddleware.cs",
+              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Middleware\\DdosProtectionMiddleware.cs",
+              "RelativeToolTip": "Middleware\\DdosProtectionMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T06:48:03.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OtpEntry.cs",
+              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Models\\OtpEntry.cs",
+              "RelativeDocumentMoniker": "Models\\OtpEntry.cs",
+              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Models\\OtpEntry.cs",
+              "RelativeToolTip": "Models\\OtpEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T07:33:15.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FileScanService.cs",
+              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Services\\FileScanService.cs",
+              "RelativeDocumentMoniker": "Services\\FileScanService.cs",
+              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Services\\FileScanService.cs",
+              "RelativeToolTip": "Services\\FileScanService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwFUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T06:47:12.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "SqlInjectionDemo.cshtml",
               "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Views\\Security\\SqlInjectionDemo.cshtml",
               "RelativeDocumentMoniker": "Views\\Security\\SqlInjectionDemo.cshtml",
@@ -414,12 +361,11 @@
               "RelativeToolTip": "Views\\Security\\SqlInjectionDemo.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-12T06:48:36.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-12T06:48:36.17Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 19,
               "Title": "DdosProtectionService.cs",
               "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Services\\DdosProtectionService.cs",
               "RelativeDocumentMoniker": "Services\\DdosProtectionService.cs",
@@ -431,7 +377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 20,
               "Title": "FileSecurityController.cs",
               "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Controllers\\FileSecurityController.cs",
               "RelativeDocumentMoniker": "Controllers\\FileSecurityController.cs",
@@ -443,7 +389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 22,
               "Title": "AttackLog.cs",
               "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Models\\AttackLog.cs",
               "RelativeDocumentMoniker": "Models\\AttackLog.cs",
@@ -455,7 +401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 21,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
