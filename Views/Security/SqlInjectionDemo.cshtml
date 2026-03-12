@@ -1,59 +1,76 @@
 ﻿@model IEnumerable<SecureShopDemo.Models.User>
 
-<h2 class="mb-4">SQL Injection Simulation</h2>
+<h2 class="mb-4">🔬 SQL Injection Demo</h2>
 
 @if (ViewBag.UnsafeMode)
 {
-    <div class="alert alert-danger">
-        Đang ở chế độ <b>UNSAFE MODE</b> (có thể bị SQL Injection)
-    </div>
-    <a class="btn btn-success mb-3" href="/Security/SqlInjectionDemo?unsafeMode=false">
-        Chuyển sang SAFE MODE
-    </a>
+    <div class="alert alert-danger"><strong>⚠️ UNSAFE MODE</strong> – Dùng string concatenation. Có thể bị SQL Injection!</div>
+    <a class="btn btn-success mb-3" href="/Security/SqlInjectionDemo?unsafeMode=false">✅ Chuyển sang SAFE MODE</a>
 }
 else
 {
-    <div class="alert alert-success">
-        Đang ở chế độ <b>SAFE MODE</b> (chống SQL Injection)
-    </div>
-    <a class="btn btn-danger mb-3" href="/Security/SqlInjectionDemo?unsafeMode=true">
-        Chuyển sang UNSAFE MODE
-    </a>
+    <div class="alert alert-success"><strong>✅ SAFE MODE</strong> – Dùng Parameterized Query. SQL Injection bị chặn!</div>
+    <a class="btn btn-danger mb-3" href="/Security/SqlInjectionDemo?unsafeMode=true">⚠️ Chuyển sang UNSAFE MODE</a>
 }
+
+<div class="card mb-4">
+    <div class="card-header bg-dark text-white">📖 Hướng dẫn demo</div>
+    <div class="card-body">
+        <p>Thử nhập: <code>' OR 1=1 --</code></p>
+        <ul>
+            <li><strong>UNSAFE MODE:</strong> Input nối trực tiếp vào SQL → trả toàn bộ dữ liệu</li>
+            <li><strong>SAFE MODE:</strong> Input được tham số hóa → không có tác dụng</li>
+        </ul>
+    </div>
+</div>
 
 <form method="post">
     @Html.AntiForgeryToken()
     <input type="hidden" name="unsafeMode" value="@ViewBag.UnsafeMode.ToString().ToLower()" />
-
     <div class="mb-3">
-        <label>Username</label>
-        <input class="form-control" name="username" placeholder="Nhập username..." />
+        <label class="form-label fw-bold">Username</label>
+        <input class="form-control" name="username" placeholder="Nhập username hoặc SQL payload..." />
     </div>
-
-    <button class="btn btn-primary">Search</button>
+    <button class="btn btn-primary">🔍 Search</button>
 </form>
 
 <hr />
 
-<h4>Kết quả</h4>
+@if (!string.IsNullOrEmpty(ViewBag.ExecutedSql as string))
+{
+    <div class="card mb-3">
+        <div class="card-header bg-secondary text-white">💻 Câu SQL thực thi</div>
+        <div class="card-body"><code class="text-danger fs-6">@ViewBag.ExecutedSql</code></div>
+    </div>
+}
 
-<table class="table table-bordered">
+@if (ViewBag.AttackMessage != null)
+{
+    if (ViewBag.AttackDetected == true)
+    {
+        <div class="alert alert-danger">@ViewBag.AttackMessage</div>
+    }
+    else
+    {
+        <div class="alert alert-success">@ViewBag.AttackMessage</div>
+    }
+}
+
+@if (ViewBag.SqlError != null)
+{
+    <div class="alert alert-warning"><strong>SQL Error:</strong> @ViewBag.SqlError</div>
+}
+
+<h4>Kết quả (@Model.Count() bản ghi)</h4>
+<table class="table table-bordered table-striped">
     <thead class="table-dark">
-        <tr>
-            <th>ID</th>
-            <th>Username</th>
-            <th>FullName</th>
-            <th>Role</th>
-        </tr>
+        <tr><th>ID</th><th>Username</th><th>FullName</th><th>Role</th></tr>
     </thead>
     <tbody>
         @foreach (var user in Model)
         {
-            <tr>
-                <td>@user.Id</td>
-                <td>@user.Username</td>
-                <td>@user.FullName</td>
-                <td>@user.Role</td>
+            <tr class="@(ViewBag.AttackDetected == true ? "table-danger" : "")">
+                <td>@user.Id</td><td>@user.Username</td><td>@user.FullName</td><td>@user.Role</td>
             </tr>
         }
     </tbody>
