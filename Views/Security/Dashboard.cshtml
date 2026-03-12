@@ -1,5 +1,9 @@
 ﻿@model IEnumerable<SecureShopDemo.Models.LoginAttemptLog>
 
+@{
+    ViewData["Title"] = "Security Dashboard";
+}
+
 <h2 class="mb-4">🛡️ Security Dashboard</h2>
 
 <div class="row mb-3">
@@ -32,11 +36,21 @@
     </div>
 </div>
 
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="card" style="background-color:#fd7e14;color:white"><div class="card-body"><h6>🌊 DDoS Suspected</h6><h3>@ViewBag.DdosCount</h3></div></div>
+    </div>
+    <div class="col-md-3">
+        <div class="card" style="background-color:#20c997;color:white"><div class="card-body"><h6>📋 Audit Logs</h6><h3>@ViewBag.TotalAuditLogs</h3></div></div>
+    </div>
+</div>
+
 <div class="mb-3 d-flex gap-2 flex-wrap">
     <a class="btn btn-outline-primary" href="/Security/LoginLogs">📋 Lịch sử đăng nhập</a>
     <a class="btn btn-outline-danger" href="/Security/AttackLogs">💥 Nhật ký tấn công</a>
     <a class="btn btn-outline-dark" href="/Security/BlockedIps">🚫 IP đang bị chặn</a>
     <a class="btn btn-outline-info" href="/FileSecurity/UploadLogs">📁 Nhật ký upload</a>
+    <a class="btn btn-outline-success" href="/Security/AuditLogs">📋 Audit Logs</a>
     <a class="btn btn-outline-warning" href="/Security/Lab">🧪 Security Lab</a>
 </div>
 
