@@ -1,0 +1,29 @@
+﻿@model IEnumerable<SecureShopDemo.Models.AttackLog>
+
+<h2 class="mb-4">Nhật ký tấn công</h2>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>IP</th>
+            <th>Loại</th>
+            <th>Path</th>
+            <th>Method</th>
+            <th>Mô tả</th>
+            <th>Thời gian</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var log in Model)
+        {
+            <tr>
+                <td>@log.IpAddress</td>
+                <td>@log.AttackType</td>
+                <td>@log.Path</td>
+                <td>@log.Method</td>
+                <td class="text-danger">@log.Description</td>
+                <td>@log.CreatedAt</td>
+            </tr>
+        }
+    </tbody>
+</table>

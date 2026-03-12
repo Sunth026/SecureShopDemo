@@ -1,0 +1,40 @@
+﻿@model IEnumerable<SecureShopDemo.Models.UploadedFileLog>
+
+<h2 class="mb-4">Nhật ký upload file</h2>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Original File</th>
+            <th>Extension</th>
+            <th>Size</th>
+            <th>Status</th>
+            <th>Message</th>
+            <th>Uploaded By</th>
+            <th>Time</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var log in Model)
+        {
+            <tr>
+                <td>@log.OriginalFileName</td>
+                <td>@log.Extension</td>
+                <td>@log.Size</td>
+                <td>
+                    @if (log.IsSafe)
+                    {
+                        <span class="badge bg-success">Allowed</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-danger">Blocked</span>
+                    }
+                </td>
+                <td>@log.ScanMessage</td>
+                <td>@log.UploadedBy</td>
+                <td>@log.UploadedAt</td>
+            </tr>
+        }
+    </tbody>
+</table>

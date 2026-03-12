@@ -1,0 +1,34 @@
+﻿@model SecureShopDemo.ViewModels.VerifyOtpViewModel
+
+@{
+    ViewData["Title"] = "Xác thực OTP";
+}
+
+<h2>Xác thực OTP</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-info">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+<form asp-action="VerifyOtp" method="post">
+    <input type="hidden" asp-for="Username" />
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="mb-3">
+        <label asp-for="OtpCode" class="form-label"></label>
+        <input asp-for="OtpCode" class="form-control" maxlength="6" />
+        <span asp-validation-for="OtpCode" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Xác nhận OTP</button>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

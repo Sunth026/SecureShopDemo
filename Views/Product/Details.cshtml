@@ -1,0 +1,135 @@
+﻿@model SecureShopDemo.ViewModels.ProductDetailsViewModel
+
+@{
+    ViewData["Title"] = "Chi tiết sản phẩm";
+}
+
+@if (Model.Product == null)
+{
+    <div class="alert alert-danger">Không tìm thấy sản phẩm.</div>
+    return;
+}
+
+<h2>@Model.Product.Name</h2>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="border rounded p-3 mb-3">
+            <p><strong>Giá:</strong> @Model.Product.Price</p>
+            <p><strong>Tồn kho:</strong> @Model.Product.Stock</p>
+            <p><strong>Mô tả:</strong> @Model.Product.Description</p>
+
+            <form asp-controller="Cart" asp-action="AddToCart" method="post">
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="productId" value="@Model.Product.Id" />
+
+                <div class="mb-3">
+                    <label>Số lượng</label>
+                    <input type="number" name="quantity" value="1" min="1" class="form-control" style="width:120px;" />
+                </div>
+
+                <button type="submit" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                <a class="btn btn-outline-secondary" href="/Cart">Xem giỏ hàng</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        @if (Model.HasPurchased)
+        {
+            <div class="alert alert-success">
+                Bạn đã mua sản phẩm này, bạn có thể để lại bình luận.
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-warning">
+                Chỉ khách hàng đã mua sản phẩm mới được bình luận.
+            </div>
+        }
+
+        @if (Model.UnsafeMode)
+        {
+            <div class="alert alert-danger">
+                Đang ở chế độ <b>UNSAFE MODE</b> - bình luận được render bằng Html.Raw
+            </div>
+            <a class="btn btn-warning mb-3" href="/Product/Details/@Model.Product.Id?unsafeMode=false">Chuyển sang SAFE MODE</a>
+        }
+        else
+        {
+            <div class="alert alert-success">
+                Đang ở chế độ <b>SAFE MODE</b> - bình luận được HTML encode
+            </div>
+            <a class="btn btn-danger mb-3" href="/Product/Details/@Model.Product.Id?unsafeMode=true">Chuyển sang UNSAFE MODE</a>
+        }
+    </div>
+</div>
+
+<hr />
+
+<h4>Bình luận sản phẩm</h4>
+
+@if (Model.HasPurchased)
+{
+    <form asp-action="AddComment" method="post" enctype="multipart/form-data">
+        @Html.AntiForgeryToken()
+        <input type="hidden" name="productId" value="@Model.Product.Id" />
+        <input type="hidden" name="unsafeMode" value="@Model.UnsafeMode.ToString().ToLower()" />
+
+        <div class="mb-3">
+            <label class="form-label">Nội dung bình luận</label>
+            <textarea name="content" class="form-control" rows="4"
+                  placeholder="Nhập bình luận... thử nhập: <script>alert('XSS')</script>"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">File đính kèm</label>
+            <input type="file" name="attachment" class="form-control" />
+            <div class="form-text">Cho phép: .jpg, .jpeg, .png, .pdf, .txt (tối đa 2MB)</div>
+        </div>
+
+        <button type="submit" class="btn btn-success">Gửi bình luận</button>
+    </form>
+}
+else
+{
+    <div class="alert alert-secondary">
+        Bạn cần mua sản phẩm này trước khi để lại bình luận.
+    </div>
+}
+
+<hr />
+
+@if (!Model.Comments.Any())
+{
+    <div class="alert alert-info">Chưa có bình luận nào.</div>
+}
+else
+{
+    @foreach (var c in Model.Comments)
+    {
+        <div class="border rounded p-3 mb-3">
+            <div>
+                <strong>@c.Username</strong> - @c.CreatedAt
+            </div>
+
+            <div class="mt-2">
+                @if (Model.UnsafeMode)
+                {
+                    @Html.Raw(c.Content)
+                }
+                else
+                {
+                    @c.Content
+                }
+            </div>
+
+            @if (!string.IsNullOrEmpty(c.AttachmentPath))
+            {
+                <div class="mt-2">
+                    <a href="@c.AttachmentPath" target="_blank">Xem file đính kèm: @c.OriginalFileName</a>
+                </div>
+            }
+        </div>
+    }
+}

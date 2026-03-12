@@ -1,0 +1,812 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\laptrinhwin\\SecureShopDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\middleware\\ddosprotectionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:middleware\\ddosprotectionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\services\\ddosprotectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:services\\ddosprotectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\controllers\\securitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:controllers\\securitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\views\\account\\verifyotp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\account\\verifyotp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\models\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:models\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\services\\otpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:services\\otpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\viewmodels\\verifyotpviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:viewmodels\\verifyotpviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\models\\otpentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:models\\otpentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\views\\order\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\order\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\viewmodels\\cartitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:viewmodels\\cartitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\models\\productcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:models\\productcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\viewmodels\\productdetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:viewmodels\\productdetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\viewmodels\\blockedipviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:viewmodels\\blockedipviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\views\\filesecurity\\uploadlogs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\filesecurity\\uploadlogs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\views\\filesecurity\\uploaddemo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\filesecurity\\uploaddemo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\views\\order\\csrfdemo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\order\\csrfdemo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\views\\security\\sqlinjectiondemo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\security\\sqlinjectiondemo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\views\\security\\blockedips.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\security\\blockedips.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\views\\security\\attacklogs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\security\\attacklogs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\views\\security\\loginlogs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\security\\loginlogs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\views\\security\\lab.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\security\\lab.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\views\\security\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\security\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\services\\filescanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:services\\filescanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\services\\loginlogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:services\\loginlogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\controllers\\filesecuritycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:controllers\\filesecuritycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\views\\filesecurity\\lab.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\filesecurity\\lab.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\models\\attacklog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:models\\attacklog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\laptrinhwin\\secureshopdemo\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DdosProtectionService.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Services\\DdosProtectionService.cs",
+              "RelativeDocumentMoniker": "Services\\DdosProtectionService.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Services\\DdosProtectionService.cs",
+              "RelativeToolTip": "Services\\DdosProtectionService.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAcwCYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T11:19:10.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAC0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T10:40:21.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAPsAAAAAAAAAAAAswAkBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T10:33:42.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DdosProtectionMiddleware.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Middleware\\DdosProtectionMiddleware.cs",
+              "RelativeDocumentMoniker": "Middleware\\DdosProtectionMiddleware.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Middleware\\DdosProtectionMiddleware.cs",
+              "RelativeToolTip": "Middleware\\DdosProtectionMiddleware.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA9wCYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T11:19:40.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T10:25:16.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T10:31:08.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SecurityController.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Controllers\\SecurityController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SecurityController.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Controllers\\SecurityController.cs",
+              "RelativeToolTip": "Controllers\\SecurityController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T11:03:07.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Product\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Details.cshtml",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Product\\Details.cshtml",
+              "RelativeToolTip": "Views\\Product\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T11:57:59.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAN4AAAAAAAAAAAAmwOkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T10:39:53.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAANMAAAAAAAAAAAAmwN0AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T10:39:12.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAABcBAAAAAAAAAAAlwCYBAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T10:31:53.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T10:37:38.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Controllers\\CartController.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAAAGoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T14:22:34.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\ViewModels\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\RegisterViewModel.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\ViewModels\\RegisterViewModel.cs",
+              "RelativeToolTip": "ViewModels\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T10:36:33.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "Services\\EmailService.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Services\\EmailService.cs",
+              "RelativeToolTip": "Services\\EmailService.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAACcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T01:01:14.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-10T10:22:45.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "VerifyOtp.cshtml",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Account\\VerifyOtp.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\VerifyOtp.cshtml",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Account\\VerifyOtp.cshtml",
+              "RelativeToolTip": "Views\\Account\\VerifyOtp.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAADwvyEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-11T00:41:05.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EmailSettings.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Models\\EmailSettings.cs",
+              "RelativeDocumentMoniker": "Models\\EmailSettings.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Models\\EmailSettings.cs",
+              "RelativeToolTip": "Models\\EmailSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T01:00:43.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAqwGIAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T10:26:27.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAcwCIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T10:35:19.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "OtpService.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Services\\OtpService.cs",
+              "RelativeDocumentMoniker": "Services\\OtpService.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Services\\OtpService.cs",
+              "RelativeToolTip": "Services\\OtpService.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAqwEYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T00:35:25.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "VerifyOtpViewModel.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\ViewModels\\VerifyOtpViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\VerifyOtpViewModel.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\ViewModels\\VerifyOtpViewModel.cs",
+              "RelativeToolTip": "ViewModels\\VerifyOtpViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T00:34:14.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "OtpEntry.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Models\\OtpEntry.cs",
+              "RelativeDocumentMoniker": "Models\\OtpEntry.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Models\\OtpEntry.cs",
+              "RelativeToolTip": "Models\\OtpEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T00:29:39.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Controllers\\OrderController.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAqwHoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T12:25:36.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cart\\Index.cshtml",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "Views\\Cart\\Index.cshtml",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAqwC0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T14:25:30.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Success.cshtml",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Order\\Success.cshtml",
+              "RelativeDocumentMoniker": "Views\\Order\\Success.cshtml",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Order\\Success.cshtml",
+              "RelativeToolTip": "Views\\Order\\Success.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T14:26:41.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CartItemViewModel.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\ViewModels\\CartItemViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\CartItemViewModel.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\ViewModels\\CartItemViewModel.cs",
+              "RelativeToolTip": "ViewModels\\CartItemViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T14:05:22.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ProductComment.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Models\\ProductComment.cs",
+              "RelativeDocumentMoniker": "Models\\ProductComment.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Models\\ProductComment.cs",
+              "RelativeToolTip": "Models\\ProductComment.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAiwBkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T14:17:58.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T10:36:58.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "BlockedIpViewModel.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\ViewModels\\BlockedIpViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\BlockedIpViewModel.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\ViewModels\\BlockedIpViewModel.cs",
+              "RelativeToolTip": "ViewModels\\BlockedIpViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T11:49:09.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ProductDetailViewModel.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\ViewModels\\ProductDetailViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ProductDetailViewModel.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\ViewModels\\ProductDetailViewModel.cs",
+              "RelativeToolTip": "ViewModels\\ProductDetailViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T11:57:01.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "UploadLogs.cshtml",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Views\\FileSecurity\\UploadLogs.cshtml",
+              "RelativeDocumentMoniker": "Views\\FileSecurity\\UploadLogs.cshtml",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Views\\FileSecurity\\UploadLogs.cshtml",
+              "RelativeToolTip": "Views\\FileSecurity\\UploadLogs.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAqwCcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T12:41:11.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "UploadDemo.cshtml",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Views\\FileSecurity\\UploadDemo.cshtml",
+              "RelativeDocumentMoniker": "Views\\FileSecurity\\UploadDemo.cshtml",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Views\\FileSecurity\\UploadDemo.cshtml",
+              "RelativeToolTip": "Views\\FileSecurity\\UploadDemo.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAqwCcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T12:40:38.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CsrfDemo.cshtml",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Order\\CsrfDemo.cshtml",
+              "RelativeDocumentMoniker": "Views\\Order\\CsrfDemo.cshtml",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Order\\CsrfDemo.cshtml",
+              "RelativeToolTip": "Views\\Order\\CsrfDemo.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAqwDQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T12:27:27.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "SqlInjectionDemo.cshtml",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Security\\SqlInjectionDemo.cshtml",
+              "RelativeDocumentMoniker": "Views\\Security\\SqlInjectionDemo.cshtml",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Security\\SqlInjectionDemo.cshtml",
+              "RelativeToolTip": "Views\\Security\\SqlInjectionDemo.cshtml",
+              "ViewState": "AgIAACIAAAAAAAAAAAAqwDsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T12:21:45.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "BlockedIps.cshtml",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Security\\BlockedIps.cshtml",
+              "RelativeDocumentMoniker": "Views\\Security\\BlockedIps.cshtml",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Security\\BlockedIps.cshtml",
+              "RelativeToolTip": "Views\\Security\\BlockedIps.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T11:49:56.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "AttackLogs.cshtml",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Security\\AttackLogs.cshtml",
+              "RelativeDocumentMoniker": "Views\\Security\\AttackLogs.cshtml",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Security\\AttackLogs.cshtml",
+              "RelativeToolTip": "Views\\Security\\AttackLogs.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T11:20:00.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "LoginLogs.cshtml",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Security\\LoginLogs.cshtml",
+              "RelativeDocumentMoniker": "Views\\Security\\LoginLogs.cshtml",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Security\\LoginLogs.cshtml",
+              "RelativeToolTip": "Views\\Security\\LoginLogs.cshtml",
+              "ViewState": "AgIAABcAAAAAAAAAAAAqwDAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T11:03:59.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Lab.cshtml",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Security\\Lab.cshtml",
+              "RelativeDocumentMoniker": "Views\\Security\\Lab.cshtml",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Security\\Lab.cshtml",
+              "RelativeToolTip": "Views\\Security\\Lab.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAAAqwDMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T13:48:18.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "FileScanService.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Services\\FileScanService.cs",
+              "RelativeDocumentMoniker": "Services\\FileScanService.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Services\\FileScanService.cs",
+              "RelativeToolTip": "Services\\FileScanService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAA8wBsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T12:38:39.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Security\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Security\\Dashboard.cshtml",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Views\\Security\\Dashboard.cshtml",
+              "RelativeToolTip": "Views\\Security\\Dashboard.cshtml",
+              "ViewState": "AgIAADoAAAAAAAAAAAAqwFMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T11:13:18.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "LoginLogService.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Services\\LoginLogService.cs",
+              "RelativeDocumentMoniker": "Services\\LoginLogService.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Services\\LoginLogService.cs",
+              "RelativeToolTip": "Services\\LoginLogService.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T11:00:05.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "FileSecurityController.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Controllers\\FileSecurityController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FileSecurityController.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Controllers\\FileSecurityController.cs",
+              "RelativeToolTip": "Controllers\\FileSecurityController.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAqwHoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T12:39:48.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Lab.cshtml",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Views\\FileSecurity\\Lab.cshtml",
+              "RelativeDocumentMoniker": "Views\\FileSecurity\\Lab.cshtml",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Views\\FileSecurity\\Lab.cshtml",
+              "RelativeToolTip": "Views\\FileSecurity\\Lab.cshtml",
+              "ViewState": "AgIAACIAAAAAAAAAAAAqwDsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T13:23:43.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T13:06:36.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T11:50:35.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "AttackLog.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Models\\AttackLog.cs",
+              "RelativeDocumentMoniker": "Models\\AttackLog.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Models\\AttackLog.cs",
+              "RelativeToolTip": "Models\\AttackLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T11:18:44.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\laptrinhwin\\SecureShopDemo\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\laptrinhwin\\SecureShopDemo\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T10:33:49.519Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

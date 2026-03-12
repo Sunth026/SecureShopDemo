@@ -1,0 +1,152 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\hk2\\nhom1_at_bmtt\\nhom1\\secureshopdemo\\secureshopdemo\\controllers\\securitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:controllers\\securitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\hk2\\nhom1_at_bmtt\\nhom1\\secureshopdemo\\secureshopdemo\\controllers\\filesecuritycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:controllers\\filesecuritycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\hk2\\nhom1_at_bmtt\\nhom1\\secureshopdemo\\secureshopdemo\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\hk2\\nhom1_at_bmtt\\nhom1\\secureshopdemo\\secureshopdemo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\hk2\\nhom1_at_bmtt\\nhom1\\secureshopdemo\\secureshopdemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|d:\\hk2\\nhom1_at_bmtt\\nhom1\\secureshopdemo\\secureshopdemo\\models\\attacklog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08619A0F-8515-48C9-803B-1B581AF3175C}|SecureShopDemo.csproj|solutionrelative:models\\attacklog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T02:29:46.285Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileSecurityController.cs",
+              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Controllers\\FileSecurityController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FileSecurityController.cs",
+              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Controllers\\FileSecurityController.cs",
+              "RelativeToolTip": "Controllers\\FileSecurityController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T06:03:30.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SecurityController.cs",
+              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Controllers\\SecurityController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SecurityController.cs",
+              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Controllers\\SecurityController.cs",
+              "RelativeToolTip": "Controllers\\SecurityController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T06:00:51.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AttackLog.cs",
+              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Models\\AttackLog.cs",
+              "RelativeDocumentMoniker": "Models\\AttackLog.cs",
+              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Models\\AttackLog.cs",
+              "RelativeToolTip": "Models\\AttackLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T03:30:48.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwB8AAACcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T03:30:44.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\HK2\\Nhom1_AT_BMTT\\Nhom1\\SecureShopDemo\\SecureShopDemo\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAACQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-12T02:46:14.793Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

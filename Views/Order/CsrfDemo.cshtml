@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "CSRF Demo";
+}
+
+<h2 class="mb-4">CSRF Demo</h2>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-info">
+        @TempData["Message"]
+    </div>
+}
+
+<div class="alert alert-warning">
+    Demo này so sánh 2 chế độ:
+    <br />
+    <b>UNSAFE:</b> không dùng Anti-Forgery Token
+    <br />
+    <b>SAFE:</b> có dùng Anti-Forgery Token
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card border-danger mb-3">
+            <div class="card-header bg-danger text-white">UNSAFE MODE</div>
+            <div class="card-body">
+                <p>Form này không có Anti-Forgery Token.</p>
+
+                <form asp-action="UnsafeCheckout" method="post">
+                    <button type="submit" class="btn btn-danger">
+                        Đặt hàng (Unsafe)
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card border-success mb-3">
+            <div class="card-header bg-success text-white">SAFE MODE</div>
+            <div class="card-body">
+                <p>Form này có Anti-Forgery Token.</p>
+
+                <form asp-action="SafeCheckout" method="post">
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn btn-success">
+                        Đặt hàng (Safe)
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

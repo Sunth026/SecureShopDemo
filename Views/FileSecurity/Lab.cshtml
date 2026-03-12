@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Security Lab";
+}
+
+<h2 class="mb-4">Security Lab</h2>
+
+<div class="alert alert-warning">
+    Khu vực này dành cho quản trị viên để mô phỏng và kiểm thử các lỗ hổng bảo mật phổ biến.
+</div>
+
+<div class="row g-3">
+    <div class="col-md-6">
+        <div class="card h-100 border-danger">
+            <div class="card-body">
+                <h5 class="card-title">XSS Simulation</h5>
+                <p class="card-text">
+                    Mô phỏng lỗ hổng Cross-Site Scripting trên bình luận sản phẩm với chế độ an toàn và không an toàn.
+                </p>
+                <a class="btn btn-danger" href="/Product/Details/1?unsafeMode=true">Mở chế độ UNSAFE</a>
+                <a class="btn btn-success" href="/Product/Details/1?unsafeMode=false">Mở chế độ SAFE</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card h-100 border-secondary">
+            <div class="card-body">
+                <h5 class="card-title">SQL Injection Simulation</h5>
+                <p class="card-text">
+                    So sánh truy vấn SQL không an toàn và truy vấn có tham số hóa.
+                </p>
+                <a class="btn btn-secondary" href="/Security/SqlInjectionDemo">Mở SQL Injection Lab</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card h-100 border-warning">
+            <div class="card-body">
+                <h5 class="card-title">CSRF Simulation</h5>
+                <p class="card-text">
+                    Mô phỏng request giả mạo và cơ chế chống CSRF bằng Anti-Forgery Token.
+                </p>
+                <a class="btn btn-warning" href="/Order/CsrfDemo">Mở CSRF Lab</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card h-100 border-info">
+            <div class="card-body">
+                <h5 class="card-title">File Upload Validation</h5>
+                <p class="card-text">
+                    Kiểm thử tải lên file an toàn, chặn file thực thi và theo dõi nhật ký upload.
+                </p>
+                <a class="btn btn-info" href="/FileSecurity/UploadDemo">Mở Upload Lab</a>
+            </div>
+        </div>
+    </div>
+</div>

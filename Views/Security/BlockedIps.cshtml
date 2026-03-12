@@ -1,0 +1,30 @@
+﻿@model IEnumerable<SecureShopDemo.ViewModels.BlockedIpViewModel>
+
+<h2 class="mb-4">IP đang bị chặn</h2>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-success">
+        Hiện tại không có IP nào đang bị chặn.
+    </div>
+}
+else
+{
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>IP Address</th>
+                <th>Blocked Until</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.IpAddress</td>
+                    <td class="text-danger fw-bold">@item.BlockedUntil</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

@@ -1,0 +1,355 @@
+﻿@model IEnumerable<SecureShopDemo.Models.Product>
+
+@{
+    ViewData["Title"] = "Danh sách sản phẩm";
+    var keyword = ViewBag.Keyword as string;
+}
+
+<style>
+    .product-page {
+        padding: 10px 0 30px;
+    }
+
+    .product-header {
+        background: linear-gradient(135deg, #ffffff, #f8fbff);
+        border: 1px solid #e9eef5;
+        border-radius: 18px;
+        padding: 24px 28px;
+        margin-bottom: 24px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    }
+
+    .product-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #1f2937;
+        margin-bottom: 6px;
+    }
+
+    .product-subtitle {
+        color: #6b7280;
+        margin-bottom: 0;
+    }
+
+    .search-card,
+    .table-card {
+        background: #fff;
+        border: 1px solid #e9eef5;
+        border-radius: 18px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+        margin-bottom: 24px;
+        overflow: hidden;
+    }
+
+        .search-card .card-body,
+        .table-card .card-body {
+            padding: 24px;
+        }
+
+    .section-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #1f2937;
+        margin-bottom: 6px;
+    }
+
+    .section-subtitle {
+        color: #6b7280;
+        margin-bottom: 20px;
+    }
+
+    .search-label {
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #374151;
+    }
+
+    .search-input {
+        height: 52px;
+        border-radius: 12px;
+        border: 1px solid #d7dee8;
+        padding: 12px 16px;
+        font-size: 1rem;
+        box-shadow: none;
+        transition: all 0.2s ease;
+    }
+
+        .search-input:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.15);
+        }
+
+    .btn-search {
+        min-width: 120px;
+        height: 48px;
+        border-radius: 12px;
+        font-weight: 600;
+        border: none;
+        background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    }
+
+        .btn-search:hover {
+            opacity: 0.95;
+        }
+
+    .btn-reset {
+        min-width: 120px;
+        height: 48px;
+        border-radius: 12px;
+        font-weight: 600;
+    }
+
+    .result-badge {
+        display: inline-block;
+        background: #eef4ff;
+        color: #2563eb;
+        padding: 8px 14px;
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: 0.95rem;
+        margin-bottom: 16px;
+    }
+
+    .product-table {
+        margin-bottom: 0;
+        border-collapse: separate;
+        border-spacing: 0;
+        overflow: hidden;
+    }
+
+        .product-table thead th {
+            background: #111827;
+            color: #fff;
+            font-weight: 600;
+            border: none;
+            padding: 16px 14px;
+            vertical-align: middle;
+        }
+
+        .product-table tbody td {
+            padding: 16px 14px;
+            vertical-align: middle;
+            border-color: #edf2f7;
+        }
+
+        .product-table tbody tr {
+            transition: all 0.2s ease;
+        }
+
+            .product-table tbody tr:hover {
+                background: #f8fbff;
+            }
+
+    .product-id {
+        font-weight: 600;
+        color: #6b7280;
+    }
+
+    .product-name {
+        font-weight: 600;
+        color: #111827;
+        font-size: 1rem;
+    }
+
+    .product-price {
+        font-weight: 700;
+        color: #dc2626;
+    }
+
+    .stock-badge {
+        display: inline-block;
+        padding: 7px 12px;
+        border-radius: 999px;
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+
+    .stock-high {
+        background: #dcfce7;
+        color: #166534;
+    }
+
+    .stock-medium {
+        background: #fef3c7;
+        color: #92400e;
+    }
+
+    .stock-low {
+        background: #fee2e2;
+        color: #b91c1c;
+    }
+
+    .product-image {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 1px solid #e5e7eb;
+        background: #fff;
+    }
+
+    .no-image {
+        display: inline-block;
+        color: #9ca3af;
+        font-style: italic;
+        font-size: 0.9rem;
+    }
+
+    .btn-detail {
+        background: linear-gradient(135deg, #2563eb, #1d4ed8);
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        padding: 9px 16px;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.2s ease;
+    }
+
+        .btn-detail:hover {
+            color: #fff;
+            transform: translateY(-1px);
+            box-shadow: 0 8px 18px rgba(37, 99, 235, 0.2);
+        }
+
+    .empty-box {
+        background: #fff8e1;
+        color: #8a6d3b;
+        border: 1px solid #ffe58f;
+        border-radius: 14px;
+        padding: 18px;
+        font-weight: 500;
+    }
+
+    @@media (max-width: 768px) {
+        .product-header {
+            padding: 18px;
+        }
+
+        .product-title {
+            font-size: 1.6rem;
+        }
+
+        .search-card .card-body,
+        .table-card .card-body {
+            padding: 18px;
+        }
+
+        .btn-search,
+        .btn-reset {
+            width: 100%;
+        }
+    }
+</style>
+
+<div class="container product-page">
+    <div class="product-header">
+        <h2 class="product-title">Danh sách sản phẩm</h2>
+        <p class="product-subtitle">Tìm kiếm và xem nhanh các sản phẩm trong hệ thống.</p>
+    </div>
+
+    <div class="search-card">
+        <div class="card-body">
+            <div class="section-title">Tìm kiếm sản phẩm</div>
+            <div class="section-subtitle">Nhập tên sản phẩm để lọc nhanh danh sách.</div>
+
+            <form method="get" asp-controller="Product" asp-action="Index">
+                <div class="row g-3 align-items-end">
+                    <div class="col-md-8">
+                        <label class="search-label">Tên sản phẩm</label>
+                        <input type="text"
+                               name="keyword"
+                               value="@keyword"
+                               class="form-control search-input"
+                               placeholder="Nhập tên sản phẩm..." />
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex gap-2 flex-wrap">
+                            <button type="submit" class="btn btn-primary btn-search">Tìm kiếm</button>
+                            <a asp-controller="Product" asp-action="Index" class="btn btn-outline-secondary btn-reset">Xóa lọc</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="table-card">
+        <div class="card-body">
+            <div class="section-title">Kết quả</div>
+            <div class="result-badge">Tổng: @Model.Count() sản phẩm</div>
+
+            @if (!Model.Any())
+            {
+                <div class="empty-box">
+                    Không tìm thấy sản phẩm phù hợp.
+                </div>
+            }
+            else
+            {
+                <div class="table-responsive">
+                    <table class="table product-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Giá</th>
+                                <th>Tồn kho</th>
+                                <th>Ảnh</th>
+                                <th class="text-center">Chi tiết</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        <span class="product-id">#@item.Id</span>
+                                    </td>
+                                    <td>
+                                        <div class="product-name">@item.Name</div>
+                                    </td>
+                                    <td>
+                                        <span class="product-price">@item.Price.ToString("N0") VNĐ</span>
+                                    </td>
+                                    <td>
+                                        @if (item.Stock > 20)
+                                        {
+                                            <span class="stock-badge stock-high">Còn nhiều (@item.Stock)</span>
+                                        }
+                                        else if (item.Stock > 0)
+                                        {
+                                            <span class="stock-badge stock-medium">Sắp hết (@item.Stock)</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="stock-badge stock-low">Hết hàng</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (!string.IsNullOrEmpty(item.ImageUrl))
+                                        {
+                                            <img src="@item.ImageUrl"
+                                                 alt="@item.Name"
+                                                 class="product-image"
+                                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';" />
+                                            <span class="no-image" style="display:none;">Không có ảnh</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="no-image">Không có ảnh</span>
+                                        }
+                                    </td>
+                                    <td class="text-center">
+                                        <a class="btn-detail" href="/Product/Details/@item.Id">Xem</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+        </div>
+    </div>
+</div>

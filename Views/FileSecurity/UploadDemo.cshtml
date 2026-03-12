@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Upload Security Demo";
+}
+
+<h2 class="mb-4">Upload Security Demo</h2>
+
+<div class="alert alert-info">
+    Chỉ cho phép upload ảnh: <b>.jpg, .jpeg, .png, .gif</b><br />
+    Chặn các file nguy hiểm như: <b>.exe, .bat, .js, .php</b>
+</div>
+
+@if (ViewBag.Message != null)
+{
+    if (ViewBag.IsSafe == true)
+    {
+        <div class="alert alert-success">@ViewBag.Message</div>
+    }
+    else
+    {
+        <div class="alert alert-danger">@ViewBag.Message</div>
+    }
+}
+
+<form asp-action="UploadDemo" method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+
+    <div class="mb-3">
+        <label class="form-label">Chọn file</label>
+        <input type="file" name="uploadFile" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Upload</button>
+</form>
+
+@if (ViewBag.IsSafe == true && ViewBag.UploadedPath != null)
+{
+    <hr />
+    <h4>Ảnh đã upload</h4>
+    <img src="@ViewBag.UploadedPath" style="max-width:300px;" class="img-thumbnail" />
+}

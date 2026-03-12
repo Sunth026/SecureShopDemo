@@ -1,0 +1,60 @@
+﻿@model IEnumerable<SecureShopDemo.Models.User>
+
+<h2 class="mb-4">SQL Injection Simulation</h2>
+
+@if (ViewBag.UnsafeMode)
+{
+    <div class="alert alert-danger">
+        Đang ở chế độ <b>UNSAFE MODE</b> (có thể bị SQL Injection)
+    </div>
+    <a class="btn btn-success mb-3" href="/Security/SqlInjectionDemo?unsafeMode=false">
+        Chuyển sang SAFE MODE
+    </a>
+}
+else
+{
+    <div class="alert alert-success">
+        Đang ở chế độ <b>SAFE MODE</b> (chống SQL Injection)
+    </div>
+    <a class="btn btn-danger mb-3" href="/Security/SqlInjectionDemo?unsafeMode=true">
+        Chuyển sang UNSAFE MODE
+    </a>
+}
+
+<form method="post">
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="unsafeMode" value="@ViewBag.UnsafeMode.ToString().ToLower()" />
+
+    <div class="mb-3">
+        <label>Username</label>
+        <input class="form-control" name="username" placeholder="Nhập username..." />
+    </div>
+
+    <button class="btn btn-primary">Search</button>
+</form>
+
+<hr />
+
+<h4>Kết quả</h4>
+
+<table class="table table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>FullName</th>
+            <th>Role</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.Username</td>
+                <td>@user.FullName</td>
+                <td>@user.Role</td>
+            </tr>
+        }
+    </tbody>
+</table>

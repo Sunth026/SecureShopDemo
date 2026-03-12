@@ -1,0 +1,49 @@
+﻿@model IEnumerable<SecureShopDemo.Models.LoginAttemptLog>
+
+<h2 class="mb-4">Lịch sử đăng nhập</h2>
+
+<table class="table table-striped table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <th>Username</th>
+            <th>IP Address</th>
+            <th>Trạng thái</th>
+            <th>Thời gian</th>
+            <th>Ghi chú</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var log in Model)
+        {
+            <tr>
+                <td>@log.Username</td>
+                <td>@log.IpAddress</td>
+                <td>
+                    @if (log.IsSuccess)
+                    {
+                        <span class="badge bg-success">Success</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-danger">Fail</span>
+                    }
+                </td>
+                <td>@log.AttemptTime</td>
+                <td>
+                    @if (log.Note != null && log.Note.Contains("khóa"))
+                    {
+                        <span class="text-danger fw-bold">@log.Note</span>
+                    }
+                    else if (log.Note != null && log.Note.Contains("Sai"))
+                    {
+                        <span class="text-warning">@log.Note</span>
+                    }
+                    else
+                    {
+                        <span class="text-success">@log.Note</span>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

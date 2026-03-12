@@ -1,0 +1,315 @@
+﻿@model SecureShopDemo.ViewModels.RegisterViewModel
+
+@{
+    ViewData["Title"] = "Đăng ký";
+}
+
+<style>
+    .register-page {
+        min-height: calc(100vh - 180px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0 50px;
+    }
+
+    .register-wrapper {
+        width: 100%;
+        max-width: 1180px;
+    }
+
+    .register-card {
+        background: #fff;
+        border: 1px solid #e8eef6;
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+
+    .register-left {
+        background: linear-gradient(135deg, #0f172a, #1d4ed8, #2563eb);
+        color: #fff;
+        padding: 48px 36px;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .register-left::before {
+            content: "";
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            width: 180px;
+            height: 180px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 50%;
+        }
+
+        .register-left::after {
+            content: "";
+            position: absolute;
+            bottom: -70px;
+            left: -50px;
+            width: 200px;
+            height: 200px;
+            background: rgba(255,255,255,0.06);
+            border-radius: 50%;
+        }
+
+    .register-left-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .register-badge {
+        display: inline-block;
+        background: rgba(255,255,255,0.14);
+        color: #eaf2ff;
+        border-radius: 999px;
+        padding: 8px 14px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 18px;
+    }
+
+    .register-left-title {
+        font-size: 2rem;
+        font-weight: 800;
+        line-height: 1.25;
+        margin-bottom: 14px;
+    }
+
+    .register-left-desc {
+        font-size: 1rem;
+        color: rgba(255,255,255,0.92);
+        line-height: 1.7;
+        margin-bottom: 28px;
+    }
+
+    .register-feature-list {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .register-feature-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 0.98rem;
+        color: rgba(255,255,255,0.95);
+    }
+
+    .register-feature-icon {
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.14);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9rem;
+        margin-top: 2px;
+    }
+
+    .register-right {
+        padding: 42px 36px;
+        background: #fff;
+    }
+
+    .register-form-title {
+        font-size: 2rem;
+        font-weight: 800;
+        color: #111827;
+        margin-bottom: 8px;
+    }
+
+    .register-form-subtitle {
+        color: #6b7280;
+        margin-bottom: 24px;
+    }
+
+    .validation-box {
+        background: #fef2f2;
+        border: 1px solid #fecaca;
+        color: #b91c1c;
+        border-radius: 14px;
+        padding: 14px 16px;
+        margin-bottom: 18px;
+    }
+
+    .form-label {
+        font-weight: 700;
+        color: #374151;
+        margin-bottom: 8px;
+    }
+
+    .form-control {
+        height: 52px;
+        border-radius: 14px;
+        border: 1px solid #d6deea;
+        box-shadow: none !important;
+        padding: 12px 16px;
+        font-size: 1rem;
+    }
+
+        .form-control:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.12) !important;
+        }
+
+    .btn-register-submit {
+        height: 50px;
+        border: none;
+        border-radius: 14px;
+        font-weight: 700;
+        background: linear-gradient(135deg, #1d4ed8, #2563eb);
+    }
+
+        .btn-register-submit:hover {
+            opacity: 0.96;
+        }
+
+    .btn-login-link {
+        height: 50px;
+        border-radius: 14px;
+        font-weight: 700;
+    }
+
+    .register-footer-note {
+        margin-top: 18px;
+        color: #6b7280;
+        font-size: 0.95rem;
+    }
+
+        .register-footer-note a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+    .field-validation-error {
+        display: block;
+        margin-top: 6px;
+        font-size: 0.9rem;
+    }
+
+    @@media (max-width: 991px) {
+        .register-left {
+            padding: 32px 24px;
+        }
+
+        .register-right {
+            padding: 32px 24px;
+        }
+
+        .register-left-title,
+        .register-form-title {
+            font-size: 1.7rem;
+        }
+    }
+</style>
+
+<div class="container register-page">
+    <div class="register-wrapper">
+        <div class="register-card">
+            <div class="row g-0">
+                <div class="col-lg-5">
+                    <div class="register-left">
+                        <div class="register-left-content">
+                            <div class="register-badge">Tạo tài khoản mới</div>
+                            <h1 class="register-left-title">Đăng ký để trải nghiệm hệ thống bán hàng an toàn</h1>
+                            <p class="register-left-desc">
+                                Tạo tài khoản để truy cập khu sản phẩm, thực hiện đặt hàng và trải nghiệm
+                                các chức năng mô phỏng bảo mật trong website demo của bạn.
+                            </p>
+
+                            <div class="register-feature-list">
+                                <div class="register-feature-item">
+                                    <div class="register-feature-icon">✓</div>
+                                    <div>Đăng ký nhanh để truy cập các tính năng dành cho người dùng.</div>
+                                </div>
+                                <div class="register-feature-item">
+                                    <div class="register-feature-icon">✓</div>
+                                    <div>Mật khẩu được mã hóa trước khi lưu vào hệ thống.</div>
+                                </div>
+                                <div class="register-feature-item">
+                                    <div class="register-feature-icon">✓</div>
+                                    <div>Thông tin tài khoản được dùng để phân quyền và theo dõi đăng nhập.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="register-right">
+                        <h2 class="register-form-title">Đăng ký tài khoản</h2>
+                        <p class="register-form-subtitle">Điền đầy đủ thông tin để tạo tài khoản mới.</p>
+
+                        @if (!ViewData.ModelState.IsValid)
+                        {
+                            <div asp-validation-summary="All" class="validation-box"></div>
+                        }
+
+                        <form asp-action="Register" method="post">
+                            @Html.AntiForgeryToken()
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label asp-for="Username" class="form-label">Tên đăng nhập</label>
+                                    <input asp-for="Username" class="form-control" placeholder="Nhập tên đăng nhập" />
+                                    <span asp-validation-for="Username" class="text-danger"></span>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label asp-for="FullName" class="form-label">Họ và tên</label>
+                                    <input asp-for="FullName" class="form-control" placeholder="Nhập họ và tên" />
+                                    <span asp-validation-for="FullName" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="Email" class="form-label">Email</label>
+                                <input asp-for="Email" class="form-control" placeholder="Nhập địa chỉ email" />
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label asp-for="Password" class="form-label">Mật khẩu</label>
+                                    <input asp-for="Password" type="password" class="form-control" placeholder="Nhập mật khẩu" />
+                                    <span asp-validation-for="Password" class="text-danger"></span>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label asp-for="ConfirmPassword" class="form-label">Xác nhận mật khẩu</label>
+                                    <input asp-for="ConfirmPassword" type="password" class="form-control" placeholder="Nhập lại mật khẩu" />
+                                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="d-grid gap-2 mt-4">
+                                <button type="submit" class="btn btn-primary btn-register-submit">Đăng ký</button>
+                                <a asp-action="Login" class="btn btn-outline-secondary btn-login-link">Đã có tài khoản? Đăng nhập</a>
+                            </div>
+                        </form>
+
+                        <div class="register-footer-note">
+                            Bạn đã có tài khoản?
+                            <a asp-action="Login">Đăng nhập ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

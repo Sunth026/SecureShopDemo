@@ -1,0 +1,84 @@
+﻿@model IEnumerable<SecureShopDemo.Models.LoginAttemptLog>
+
+<h2 class="mb-4">Quản trị bảo mật</h2>
+
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                <h5>Tổng đăng nhập</h5>
+                <h3>@ViewBag.TotalLogin</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card bg-success text-white">
+            <div class="card-body">
+                <h5>Đăng nhập thành công</h5>
+                <h3>@ViewBag.SuccessLogin</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card bg-danger text-white">
+            <div class="card-body">
+                <h5>Đăng nhập thất bại</h5>
+                <h3>@ViewBag.FailLogin</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card bg-warning text-dark">
+            <div class="card-body">
+                <h5>Sự kiện tấn công</h5>
+                <h3>@ViewBag.TotalAttacks</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 d-flex gap-2 flex-wrap">
+    <a class="btn btn-outline-primary" href="/Security/LoginLogs">Lịch sử đăng nhập</a>
+    <a class="btn btn-outline-danger" href="/Security/AttackLogs">Nhật ký tấn công</a>
+    <a class="btn btn-outline-dark" href="/Security/BlockedIps">IP đang bị chặn</a>
+    <a class="btn btn-outline-info" href="/FileSecurity/UploadLogs">Nhật ký upload</a>
+    <a class="btn btn-outline-warning" href="/Security/Lab">Security Lab</a>
+</div>
+
+<h4>10 lần đăng nhập gần nhất</h4>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Username</th>
+            <th>IP</th>
+            <th>Trạng thái</th>
+            <th>Thời gian</th>
+            <th>Ghi chú</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var log in Model)
+        {
+            <tr>
+                <td>@log.Username</td>
+                <td>@log.IpAddress</td>
+                <td>
+                    @if (log.IsSuccess)
+                    {
+                        <span class="badge bg-success">Success</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-danger">Fail</span>
+                    }
+                </td>
+                <td>@log.AttemptTime</td>
+                <td>@log.Note</td>
+            </tr>
+        }
+    </tbody>
+</table>
