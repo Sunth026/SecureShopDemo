@@ -145,3 +145,4 @@ D:\HK2\Nhom1_AT_BMTT\Nhom1\SecureShopDemo\SecureShopDemo\obj\Debug\net8.0\refint
 D:\HK2\Nhom1_AT_BMTT\Nhom1\SecureShopDemo\SecureShopDemo\obj\Debug\net8.0\SecureShopDemo.pdb
 D:\HK2\Nhom1_AT_BMTT\Nhom1\SecureShopDemo\SecureShopDemo\obj\Debug\net8.0\SecureShopDemo.genruntimeconfig.cache
 D:\HK2\Nhom1_AT_BMTT\Nhom1\SecureShopDemo\SecureShopDemo\obj\Debug\net8.0\ref\SecureShopDemo.dll
+D:\HK2\Nhom1_AT_BMTT\Nhom1\SecureShopDemo\SecureShopDemo\obj\Debug\net8.0\SecureShopDemo.sourcelink.json
